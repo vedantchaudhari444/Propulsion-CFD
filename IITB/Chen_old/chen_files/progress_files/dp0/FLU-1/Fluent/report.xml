@@ -1,0 +1,208 @@
+<FluentXMLReport>
+<version>
+Fluent
+Version: 2d, dp, pbns, S-A, transient (2d, double precision, pressure-based, Spalart-Allmaras, transient)
+Release: 25.2.0
+Title: 
+</version>
+
+<Models>
+
+Models
+------
+
+   Model                        Settings                            
+   --------------------------------------------------------------
+   Space                        2D                                  
+   Time                         Unsteady, 1st-Order Implicit        
+   Viscous                      Spalart-Allmaras turbulence model   
+   Production Option            Vorticity                           
+   Heat Transfer                Enabled                             
+   Solidification and Melting   Disabled                            
+   Radiation                    None                                
+   Species                      Disabled                            
+   Coupled Dispersed Phase      Disabled                            
+   NOx Pollutants               Disabled                            
+   SOx Pollutants               Disabled                            
+   Soot                         Disabled                            
+   Mercury Pollutants           Disabled                            
+   Structure                    Disabled                            
+   Acoustics                    Disabled                            
+   Eulerian Wall Film           Disabled                            
+   Potential/Electrochemistry   Disabled                            
+   Multiphase                   Disabled                            
+
+</Models>
+
+<MaterialProperties>
+Material Properties
+-------------------
+
+   Material: air (fluid)
+
+      Property               Units      Method      Value(s)     
+      --------------------------------------------------------
+      Density                kg/m^3     ideal-gas   #f           
+      Cp (Specific Heat)     J/(kg K)   constant    1006.43      
+      Thermal Conductivity   W/(m K)    constant    0.0242       
+      Viscosity              kg/(m s)   constant    1.7894e-05   
+      Molecular Weight       kg/kmol    constant    28.966       
+
+   Material: aluminum (solid)
+
+      Property               Units      Method     Value(s)   
+      -----------------------------------------------------
+      Density                kg/m^3     constant   2719       
+      Cp (Specific Heat)     J/(kg K)   constant   871        
+      Thermal Conductivity   W/(m K)    constant   202.4      
+
+</MaterialProperties>
+
+<CellZoneConditions>
+Cell Zone Conditions
+--------------------
+
+   Zones
+
+      name           id   type    material   
+      ------------------------------------
+      surface_body   2    fluid   air        
+
+   Setup Conditions
+
+      surface_body
+
+         Condition       Value   
+         ---------------------
+         Material Name   air     
+         Frame Motion?   no      
+         Mesh Motion?    no      
+
+</CellZoneConditions>
+
+<BoundaryConditions>
+Boundary Conditions
+-------------------
+
+   Zones
+
+      name      id   type              
+      ------------------------------
+      inlet     7    pressure-inlet    
+      botwall   5    wall              
+      topwall   6    wall              
+      outlet    8    pressure-outlet   
+
+   Setup Conditions
+
+      inlet
+
+         Condition                   Value       
+         -------------------------------------
+         Gauge Total Pressure [Pa]   126656.25   
+
+      botwall
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     Standard          
+
+      topwall
+
+         Condition                  Value             
+         ------------------------------------------
+         Material Name              aluminum          
+         Thermal BC Type            Heat Flux         
+         Wall Motion                Stationary Wall   
+         Shear Boundary Condition   No Slip           
+         Wall Surface Roughness     Standard          
+
+      outlet
+
+         Condition                         Value             
+         -------------------------------------------------
+         Backflow Pressure Specification   Static Pressure   
+
+</BoundaryConditions>
+
+<SolverSettings>
+Solver Settings
+---------------
+
+   Equations
+
+      Equation                       Solved   
+      -------------------------------------
+      Flow                           yes      
+      Modified Turbulent Viscosity   yes      
+      Energy                         yes      
+
+   Numerics
+
+      Numeric                         Enabled   
+      ---------------------------------------
+      Absolute Velocity Formulation   yes       
+
+   Unsteady Calculation Parameters
+
+                                         
+      --------------------------------
+      Number of Time Steps       5000    
+      Time Step Size [s]         1e-06   
+      Max Iterations/Time Step   20      
+
+   Under-Relaxation Factors
+
+      Variable                       Relaxation Factor   
+      ------------------------------------------------
+      Pressure                       0.3                 
+      Density                        1                   
+      Body Forces                    1                   
+      Momentum                       0.7                 
+      Modified Turbulent Viscosity   0.8                 
+      Turbulent Viscosity            1                   
+      Energy                         1                   
+
+   Linear Solver
+
+      Variable                       Solver Type   Termination Criterion   Residual Reduction Tolerance   
+      -------------------------------------------------------------------------------------------------
+      Pressure                       V-Cycle       0.1                                                    
+      X-Momentum                     Flexible      0.1                     0.7                            
+      Y-Momentum                     Flexible      0.1                     0.7                            
+      Modified Turbulent Viscosity   Flexible      0.1                     0.7                            
+      Energy                         F-Cycle       0.1                                                    
+
+   Pressure-Velocity Coupling
+
+      Parameter   Value    
+      ------------------
+      Type        SIMPLE   
+
+   Discretization Scheme
+
+      Variable                       Scheme                
+      --------------------------------------------------
+      Pressure                       Second Order          
+      Density                        Second Order Upwind   
+      Momentum                       Second Order Upwind   
+      Modified Turbulent Viscosity   First Order Upwind    
+      Energy                         Second Order Upwind   
+
+   Solution Limits
+
+      Quantity                         Limit    
+      ---------------------------------------
+      Minimum Absolute Pressure [Pa]   1        
+      Maximum Absolute Pressure [Pa]   5e+10    
+      Minimum Static Temperature [K]   1        
+      Maximum Static Temperature [K]   5000     
+      Maximum Turb. Viscosity Ratio    100000   
+
+</SolverSettings>
+
+</FluentXMLReport>

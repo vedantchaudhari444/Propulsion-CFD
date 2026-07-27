@@ -1,0 +1,1 @@
+In chen1.su2 the top wall and bottom wall are patched separately while in chen.su2 there is only one patch for the wall.

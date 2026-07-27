@@ -1,0 +1,32 @@
+# encoding: utf-8
+# 2025 R2
+SetScriptVersion(Version="25.2.170")
+template1 = GetTemplate(TemplateName="FLUENT")
+system1 = GetSystem(Name="FFF")
+meshComponent1 = system1.GetComponent(Name="Mesh")
+componentTemplate1 = GetComponentTemplate(Name="FluentSetupCellTemplate")
+system2 = template1.CreateSystem(
+    DataTransferFrom=[Set(FromComponent=meshComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    RelativeTo=system1)
+system3 = GetSystem(Name="Geom")
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+template2 = GetTemplate(TemplateName="Mesh")
+system4 = GetSystem(Name="Geom 1")
+system5 = template2.CreateSystem(
+    Position="Left",
+    RelativeTo=system4)
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+meshComponent2 = system5.GetComponent(Name="Mesh")
+geometryComponent1.TransferData(TargetComponent=meshComponent2)
+meshComponent2.Refresh()
+meshComponent2.UpdateUpstreamComponents()
+geometry1.Exit()
+meshComponent2.UpdateUpstreamComponents()
+meshComponent2.Update(AllDependencies=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+mesh1 = system5.GetContainer(ComponentName="Mesh")
+mesh1.Edit()
+mesh1.Exit()
+Save(Overwrite=True)

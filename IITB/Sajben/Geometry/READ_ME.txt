@@ -1,0 +1,1 @@
+The grid of the diffuser model is opened using Fidelity Pointwise
