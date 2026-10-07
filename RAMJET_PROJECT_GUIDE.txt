@@ -1,0 +1,708 @@
+================================================================================
+RAMJET CFD PROJECT - FILE AND CASE HANDOVER GUIDE
+================================================================================
+
+Generated: 2026-09-03 17:59:53
+
+IMPORTANT: This report is generated automatically by reading the existing project files.
+No existing project file is moved, renamed, deleted, or modified.
+
+Project root: C:\Users\VEDANT\Desktop\ramjet
+
+================================================================================
+PROJECT OVERVIEW
+================================================================================
+
+Number of case/result folders: 21
+Number of files directly in root: 2
+
+The folder names are preserved exactly as they currently exist.
+Case descriptions are inferred from folder names and available configuration/result files.
+
+================================================================================
+CASE SUMMARY
+================================================================================
+
+--------------------------------------------------------------------------------
+CASE FOLDER: .tmp.driveupload
+--------------------------------------------------------------------------------
+Description: Case purpose detected from folder name and file contents.
+Total files: 1
+Total stored size: 22.2 KB
+
+--------------------------------------------------------------------------------
+CASE FOLDER: 2d3dcompare
+--------------------------------------------------------------------------------
+Description: Comparison/analysis of 2D and 3D CFD results.
+Total files: 37
+Total stored size: 9.1 MB
+Dimension: 2D; 3D
+
+--------------------------------------------------------------------------------
+CASE FOLDER: 3d-no-slip
+--------------------------------------------------------------------------------
+Description: 3D no-slip CFD simulation case.
+Total files: 21
+Total stored size: 305.0 MB
+Dimension: 3D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 354 K
+Outlet pressure: 111.8 kPa
+Mesh: newmesh.su2
+Geometry files: untitled.geo; untitled.iges
+
+--------------------------------------------------------------------------------
+CASE FOLDER: 3d-no-slip-mod
+--------------------------------------------------------------------------------
+Description: Modified 3D no-slip CFD simulation case.
+Total files: 83
+Total stored size: 1.20 GB
+Dimension: 3D
+Solver: OpenFOAM; SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall; SU2 wall function
+Mach case: Mach ≈ 0.4
+Turbulence: SST k-omega; Turbulence intensity = 0.05 (5%)
+Inlet pressure: 200 kPa
+Inlet temperature: 300 K
+Outlet pressure: 100 kPa
+Mesh: mesh.su2; newmesh.su2
+Geometry files: new.geo; untitled.geo; untitled.iges
+SU2 wall-function marker detected.
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend 1 m, no slip
+--------------------------------------------------------------------------------
+Description: Extended duct case with 1 m converging section plus downstream extension; no-slip configuration.
+Total files: 35
+Total stored size: 9.8 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 354 K
+Outlet pressure: 111.8 kPa
+Mesh: mesh.su2
+Geometry files: untitled.geo
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend 1 m, slip
+--------------------------------------------------------------------------------
+Description: Extended duct case with 1 m converging section plus downstream extension; slip-wall configuration.
+Total files: 31
+Total stored size: 14.1 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Euler/slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 354 K
+Outlet pressure: 111.8 kPa
+Mesh: mesh.su2
+Geometry files: untitled.geo
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend 1.5 m
+--------------------------------------------------------------------------------
+Description: Extended-duct simulation case. Exact extension/configuration should be confirmed from the case files.
+Total files: 7
+Total stored size: 6.7 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.05 (5%)
+Inlet pressure: 200 kPa
+Inlet temperature: 300 K
+Outlet pressure: 112 kPa
+Mesh: mesh.su2
+Geometry files: untitled.geo
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend-1-m-no-slip-0.4
+--------------------------------------------------------------------------------
+Description: Extended 1 m duct, no-slip case targeting approximately Mach 0.4.
+Total files: 12
+Total stored size: 7.4 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 354 K
+Outlet pressure: 179.12 kPa
+Mesh: mesh.su2
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend-1-m-no-slip-0.6
+--------------------------------------------------------------------------------
+Description: Extended 1 m duct, no-slip case targeting approximately Mach 0.6.
+Total files: 12
+Total stored size: 6.3 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 354 K
+Outlet pressure: 156.8 kPa
+Mesh: mesh.su2
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend-1-m-slip-0.4
+--------------------------------------------------------------------------------
+Description: Extended 1 m duct, slip-wall case targeting approximately Mach 0.4.
+Total files: 6
+Total stored size: 926.4 KB
+
+--------------------------------------------------------------------------------
+CASE FOLDER: extend-1-m-slip-0.6
+--------------------------------------------------------------------------------
+Description: Extended 1 m duct, slip-wall case targeting approximately Mach 0.6.
+Total files: 12
+Total stored size: 7.4 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Euler/slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 354 K
+Outlet pressure: 156.8 kPa
+Mesh: mesh.su2
+
+--------------------------------------------------------------------------------
+CASE FOLDER: half gemetry
+--------------------------------------------------------------------------------
+Description: Half-domain/half-geometry development case.
+Total files: 10
+Total stored size: 12.4 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.05 (5%)
+Inlet pressure: 200 kPa
+Inlet temperature: 300 K
+Outlet pressure: 112 kPa
+Mesh: mesh.su2
+Geometry files: untitled.geo
+
+--------------------------------------------------------------------------------
+CASE FOLDER: mult domain
+--------------------------------------------------------------------------------
+Description: Multi-domain/interface development case.
+Total files: 7
+Total stored size: 10.5 MB
+Dimension: 2D
+Solver: SU2
+Wall treatment: Botwall = Symmetry; Euler/slip wall; Heat-flux/no-slip wall
+Turbulence: SST k-omega; Turbulence intensity = 0.01 (1%)
+Inlet pressure: 200 kPa
+Inlet temperature: 300 K
+Outlet pressure: 100 kPa
+Mesh: mesh.su2
+Geometry files: untitled.geo
+
+--------------------------------------------------------------------------------
+CASE FOLDER: openfoam
+--------------------------------------------------------------------------------
+Description: OpenFOAM simulation and post-processing cases.
+Total files: 18
+Total stored size: 932.9 MB
+Dimension: 3D
+Solver: OpenFOAM
+Mach case: Mach ≈ 0.4
+
+--------------------------------------------------------------------------------
+CASE FOLDER: Presentations
+--------------------------------------------------------------------------------
+Description: Case purpose detected from folder name and file contents.
+Total files: 3
+Total stored size: 38.5 MB
+
+--------------------------------------------------------------------------------
+CASE FOLDER: random
+--------------------------------------------------------------------------------
+Description: Miscellaneous/development files. Case purpose should be confirmed from individual files.
+Total files: 12
+Total stored size: 141.1 KB
+Geometry files: untitled.iges
+
+--------------------------------------------------------------------------------
+CASE FOLDER: results
+--------------------------------------------------------------------------------
+Description: General CFD results/post-processing files.
+Total files: 7
+Total stored size: 4.2 MB
+
+--------------------------------------------------------------------------------
+CASE FOLDER: results-0.4
+--------------------------------------------------------------------------------
+Description: Results associated with the Mach 0.4 case.
+Total files: 5
+Total stored size: 2.8 MB
+
+--------------------------------------------------------------------------------
+CASE FOLDER: results-0.6
+--------------------------------------------------------------------------------
+Description: Results associated with the Mach 0.6 case.
+Total files: 5
+Total stored size: 2.9 MB
+
+--------------------------------------------------------------------------------
+CASE FOLDER: Turb_0.01
+--------------------------------------------------------------------------------
+Description: Turbulence-intensity case associated with 0.01 turbulence intensity.
+Total files: 0
+Total stored size: 0 B
+Status: Empty folder
+
+--------------------------------------------------------------------------------
+CASE FOLDER: Turb_5
+--------------------------------------------------------------------------------
+Description: Turbulence-intensity case associated with 5% turbulence intensity.
+Total files: 22
+Total stored size: 20.1 MB
+Dimension: 2D
+Solver: SU2
+Geometry files: untitled.geo
+
+================================================================================
+FILES DIRECTLY IN PROJECT ROOT
+================================================================================
+
+python make_project_guide.py | Python Script | 22.2 KB
+
+================================================================================
+FULL FILE INVENTORY
+================================================================================
+
+Each file is listed using its original relative path. Nothing has been moved or renamed.
+
+
+[.tmp.driveupload]
+
+.tmp.driveupload\25356 | No Extension | 22.2 KB
+
+[2d3dcompare]
+
+2d3dcompare\__pycache__\config.cpython-311.pyc | PYC File | 2.1 KB
+2d3dcompare\__pycache__\plotting.cpython-311.pyc | PYC File | 5.1 KB
+2d3dcompare\__pycache__\reader.cpython-311.pyc | PYC File | 3.9 KB
+2d3dcompare\__pycache__\theory.cpython-311.pyc | PYC File | 5.2 KB
+2d3dcompare\botwall_2d.csv | CFD Result / Data | 57.8 KB
+2d3dcompare\botwall_3d.csv | CFD Result / Data | 191.3 KB
+2d3dcompare\config.py | Python Script | 3.1 KB
+2d3dcompare\main.py | Python Script | 3.3 KB
+2d3dcompare\plotting.py | Python Script | 5.9 KB
+2d3dcompare\reader.py | Python Script | 4.4 KB
+2d3dcompare\results\Centre_Density.png | Image / Figure | 472.7 KB
+2d3dcompare\results\Centre_Mach.png | Image / Figure | 439.3 KB
+2d3dcompare\results\Centre_Pressure.png | Image / Figure | 490.8 KB
+2d3dcompare\results\Centre_Temperature.png | Image / Figure | 472.6 KB
+2d3dcompare\results\CentreLine\DensityRatio.png | Image / Figure | 504.1 KB
+2d3dcompare\results\CentreLine\Mach.png | Image / Figure | 479.8 KB
+2d3dcompare\results\CentreLine\PressureRatio.png | Image / Figure | 524.4 KB
+2d3dcompare\results\CentreLine\TemperatureRatio.png | Image / Figure | 505.9 KB
+2d3dcompare\results\CentreLine\Velocity.png | Image / Figure | 452.4 KB
+2d3dcompare\results\ProcessedData\CentreLine_2D.csv | CFD Result / Data | 70.5 KB
+2d3dcompare\results\ProcessedData\CentreLine_3D.csv | CFD Result / Data | 241.3 KB
+2d3dcompare\results\ProcessedData\Theory.csv | CFD Result / Data | 99.8 KB
+2d3dcompare\results\ProcessedData\TopWall_2D.csv | CFD Result / Data | 72.8 KB
+2d3dcompare\results\ProcessedData\TopWall_3D.csv | CFD Result / Data | 27.9 KB
+2d3dcompare\results\Top_Density.png | Image / Figure | 494.7 KB
+2d3dcompare\results\Top_Mach.png | Image / Figure | 270.9 KB
+2d3dcompare\results\Top_Pressure.png | Image / Figure | 491.6 KB
+2d3dcompare\results\Top_Temperature.png | Image / Figure | 468.1 KB
+2d3dcompare\results\Top_Velocity.png | Image / Figure | 283.6 KB
+2d3dcompare\results\TopWall\DensityRatio.png | Image / Figure | 522.3 KB
+2d3dcompare\results\TopWall\Mach.png | Image / Figure | 313.8 KB
+2d3dcompare\results\TopWall\PressureRatio.png | Image / Figure | 529.8 KB
+2d3dcompare\results\TopWall\TemperatureRatio.png | Image / Figure | 374.9 KB
+2d3dcompare\results\TopWall\Velocity.png | Image / Figure | 341.2 KB
+2d3dcompare\theory.py | Python Script | 4.4 KB
+2d3dcompare\topwall_2d.csv | CFD Result / Data | 60.0 KB
+2d3dcompare\topwall_3d.csv | CFD Result / Data | 22.1 KB
+
+[3d-no-slip]
+
+3d-no-slip\allsurface.csv | CFD Result / Data | 7.6 MB
+3d-no-slip\botwall.csv | CFD Result / Data | 191.3 KB
+3d-no-slip\CFD_3D_Centreline_Theory_Comparison.py | Python Script | 2.4 KB
+3d-no-slip\Extract_TopWall_From_SurfaceCSV.py | Python Script | 885 B
+3d-no-slip\flow.vtu | CFD Result / Data | 88.8 MB
+3d-no-slip\history.csv | CFD Result / Data | 3.7 MB
+3d-no-slip\mach.png | Image / Figure | 45.3 KB
+3d-no-slip\newmesh.su2 | CFD Result / Data | 79.3 MB
+3d-no-slip\Ram.cfg | SU2 Configuration | 2.1 KB
+3d-no-slip\restart_flow.dat | CFD Result / Data | 53.9 MB
+3d-no-slip\results\Mach_Comparison.png | Image / Figure | 416.8 KB
+3d-no-slip\results_topwall\Density_Ratio.png | Image / Figure | 431.3 KB
+3d-no-slip\results_topwall\Temperature_Ratio.png | Image / Figure | 353.1 KB
+3d-no-slip\results_topwall\Velocity.png | Image / Figure | 323.9 KB
+3d-no-slip\surface.csv | CFD Result / Data | 69.7 MB
+3d-no-slip\topwall_cfd_vs_theory.py | Python Script | 2.1 KB
+3d-no-slip\topwall_theory_comparison.py | Python Script | 1.9 KB
+3d-no-slip\topwall_values.csv | CFD Result / Data | 22.1 KB
+3d-no-slip\Untitled-2.py | Python Script | 5.0 KB
+3d-no-slip\untitled.geo | Gmsh Geometry Script | 530 B
+3d-no-slip\untitled.iges | CAD / Geometry | 72.9 KB
+
+[3d-no-slip-mod]
+
+3d-no-slip-mod\0.5m.csv | CFD Result / Data | 207.0 KB
+3d-no-slip-mod\1.25m.csv | CFD Result / Data | 210.2 KB
+3d-no-slip-mod\1.5m.csv | CFD Result / Data | 209.4 KB
+3d-no-slip-mod\1.75m.csv | CFD Result / Data | 210.7 KB
+3d-no-slip-mod\1m.csv | CFD Result / Data | 206.1 KB
+3d-no-slip-mod\2.0411m.csv | CFD Result / Data | 200.9 KB
+3d-no-slip-mod\2m.csv | CFD Result / Data | 206.6 KB
+3d-no-slip-mod\Axial_p2000_noz_3d_0.4_0.7s.csv | CFD Result / Data | 139.2 KB
+3d-no-slip-mod\centerline.csv | CFD Result / Data | 181.5 KB
+3d-no-slip-mod\DensityRatio_Comparison.png | Image / Figure | 143.5 KB
+3d-no-slip-mod\flow.vtu | CFD Result / Data | 202.9 MB
+3d-no-slip-mod\history.csv | CFD Result / Data | 5.1 MB
+3d-no-slip-mod\import pandas as pd.py | Python Script | 2.8 KB
+3d-no-slip-mod\inflation\Axial_p2000_noz_3d_0.4_0.7s.csv | CFD Result / Data | 139.2 KB
+3d-no-slip-mod\inflation\centerline.csv | CFD Result / Data | 181.8 KB
+3d-no-slip-mod\inflation\cggd.txt | Text / Log | 4.7 KB
+3d-no-slip-mod\inflation\DensityRatio_Comparison.png | Image / Figure | 142.9 KB
+3d-no-slip-mod\inflation\flow.vtu | CFD Result / Data | 92.0 MB
+3d-no-slip-mod\inflation\history.csv | CFD Result / Data | 4.9 MB
+3d-no-slip-mod\inflation\import pandas as pd.py | Python Script | 9.8 KB
+3d-no-slip-mod\inflation\Mach_Comparison.png | Image / Figure | 131.6 KB
+3d-no-slip-mod\inflation\mesh.su2 | CFD Result / Data | 77.1 MB
+3d-no-slip-mod\inflation\new.geo | Gmsh Geometry Script | 6.3 KB
+3d-no-slip-mod\inflation\PressureRatio_Comparison.png | Image / Figure | 131.1 KB
+3d-no-slip-mod\inflation\Ram.cfg | SU2 Configuration | 2.1 KB
+3d-no-slip-mod\inflation\restart_flow.dat | CFD Result / Data | 56.0 MB
+3d-no-slip-mod\inflation\slice.csv | CFD Result / Data | 3.2 MB
+3d-no-slip-mod\inflation\surface.csv | CFD Result / Data | 12.0 MB
+3d-no-slip-mod\inflation\TemperatureRatio_Comparison.png | Image / Figure | 146.7 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_Density.png | Image / Figure | 158.8 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_DensityRatio.png | Image / Figure | 154.3 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_Extracted_Data.csv | CFD Result / Data | 28.2 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_Mach.png | Image / Figure | 226.9 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_StaticPressure.png | Image / Figure | 152.0 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_StaticPressureRatio.png | Image / Figure | 143.9 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_Temperature.png | Image / Figure | 219.4 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_TemperatureRatio.png | Image / Figure | 200.3 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_TotalPressure.png | Image / Figure | 206.8 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_TotalPressureRatio.png | Image / Figure | 200.0 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_Velocity.png | Image / Figure | 231.9 KB
+3d-no-slip-mod\inflation\topwall_results\Topwall_yplus.png | Image / Figure | 247.1 KB
+3d-no-slip-mod\inflation\TotalPressure_Comparison.png | Image / Figure | 114.8 KB
+3d-no-slip-mod\inflation\untitled.geo | Gmsh Geometry Script | 6.3 KB
+3d-no-slip-mod\inflation\untitled.iges | CAD / Geometry | 72.9 KB
+3d-no-slip-mod\inflation\Velocity_Comparison.png | Image / Figure | 129.0 KB
+3d-no-slip-mod\Mach_Comparison.png | Image / Figure | 132.2 KB
+3d-no-slip-mod\newmesh.su2 | CFD Result / Data | 188.2 MB
+3d-no-slip-mod\PressureRatio_Comparison.png | Image / Figure | 130.8 KB
+3d-no-slip-mod\profiles.py | Python Script | 4.5 KB
+3d-no-slip-mod\Ram.cfg | SU2 Configuration | 2.1 KB
+3d-no-slip-mod\residual.png | Image / Figure | 137.1 KB
+3d-no-slip-mod\restart_flow.dat | CFD Result / Data | 123.0 MB
+3d-no-slip-mod\results_profiles\DensityRatio_Profiles.png | Image / Figure | 531.1 KB
+3d-no-slip-mod\results_profiles\Mach_Profiles.png | Image / Figure | 519.5 KB
+3d-no-slip-mod\results_profiles\PressureRatio_Profiles.png | Image / Figure | 535.2 KB
+3d-no-slip-mod\results_profiles\TemperatureRatio_Profiles.png | Image / Figure | 541.3 KB
+3d-no-slip-mod\results_profiles\VelocityProfiles.png | Image / Figure | 544.4 KB
+3d-no-slip-mod\slice.pvsm | PVSM File | 2.0 MB
+3d-no-slip-mod\surface.csv | CFD Result / Data | 17.4 MB
+3d-no-slip-mod\TemperatureRatio_Comparison.png | Image / Figure | 143.6 KB
+3d-no-slip-mod\TotalPressure_Comparison.png | Image / Figure | 113.5 KB
+3d-no-slip-mod\untitled.geo | Gmsh Geometry Script | 2.2 KB
+3d-no-slip-mod\untitled.iges | CAD / Geometry | 72.9 KB
+3d-no-slip-mod\Velocity_Comparison.png | Image / Figure | 129.4 KB
+3d-no-slip-mod\WALL FUNCTION\Axial_p2000_noz_3d_0.4_0.7s.csv | CFD Result / Data | 139.2 KB
+3d-no-slip-mod\WALL FUNCTION\centerline.csv | CFD Result / Data | 200.8 KB
+3d-no-slip-mod\WALL FUNCTION\DensityRatio_Comparison.png | Image / Figure | 142.6 KB
+3d-no-slip-mod\WALL FUNCTION\flow.vtu | CFD Result / Data | 92.0 MB
+3d-no-slip-mod\WALL FUNCTION\history.csv | CFD Result / Data | 2.2 MB
+3d-no-slip-mod\WALL FUNCTION\import pandas as pd.py | Python Script | 2.8 KB
+3d-no-slip-mod\WALL FUNCTION\Mach_Comparison.png | Image / Figure | 131.2 KB
+3d-no-slip-mod\WALL FUNCTION\mesh.su2 | CFD Result / Data | 77.1 MB
+3d-no-slip-mod\WALL FUNCTION\newmesh.su2 | CFD Result / Data | 188.2 MB
+3d-no-slip-mod\WALL FUNCTION\PressureRatio_Comparison.png | Image / Figure | 131.1 KB
+3d-no-slip-mod\WALL FUNCTION\Ram.cfg | SU2 Configuration | 2.5 KB
+3d-no-slip-mod\WALL FUNCTION\restart_flow.dat | CFD Result / Data | 56.0 MB
+3d-no-slip-mod\WALL FUNCTION\slice.csv | CFD Result / Data | 3.5 MB
+3d-no-slip-mod\WALL FUNCTION\surface.csv | CFD Result / Data | 12.0 MB
+3d-no-slip-mod\WALL FUNCTION\TemperatureRatio_Comparison.png | Image / Figure | 146.2 KB
+3d-no-slip-mod\WALL FUNCTION\TotalPressure_Comparison.png | Image / Figure | 116.6 KB
+3d-no-slip-mod\WALL FUNCTION\untitled.geo | Gmsh Geometry Script | 6.3 KB
+3d-no-slip-mod\WALL FUNCTION\untitled.iges | CAD / Geometry | 72.9 KB
+3d-no-slip-mod\WALL FUNCTION\Velocity_Comparison.png | Image / Figure | 128.8 KB
+
+[extend 1 m, no slip]
+
+extend 1 m, no slip\0.5m.csv | CFD Result / Data | 131.0 KB
+extend 1 m, no slip\0m.csv | CFD Result / Data | 186.9 KB
+extend 1 m, no slip\1.25m.csv | CFD Result / Data | 186.5 KB
+extend 1 m, no slip\1.5m.csv | CFD Result / Data | 185.6 KB
+extend 1 m, no slip\1.75m.csv | CFD Result / Data | 187.0 KB
+extend 1 m, no slip\1m.csv | CFD Result / Data | 182.7 KB
+extend 1 m, no slip\2m.csv | CFD Result / Data | 186.6 KB
+extend 1 m, no slip\botwall_surface.csv | CFD Result / Data | 37.2 KB
+extend 1 m, no slip\botwall_values.csv | CFD Result / Data | 57.8 KB
+extend 1 m, no slip\Density_vs_Length.png | Image / Figure | 431.7 KB
+extend 1 m, no slip\flow.csv | CFD Result / Data | 1.3 MB
+extend 1 m, no slip\flow.vtu | CFD Result / Data | 852.7 KB
+extend 1 m, no slip\history.csv | CFD Result / Data | 2.3 MB
+extend 1 m, no slip\import pandas as pd.py | Python Script | 5.9 KB
+extend 1 m, no slip\mach profile.png | Image / Figure | 19.8 KB
+extend 1 m, no slip\mach_topwall.png | Image / Figure | 360.6 KB
+extend 1 m, no slip\Mach_vs_Length.png | Image / Figure | 295.6 KB
+extend 1 m, no slip\mesh.su2 | CFD Result / Data | 629.1 KB
+extend 1 m, no slip\NEWMESH.cgns | CGNS File | 388.0 KB
+extend 1 m, no slip\pressure profile.png | Image / Figure | 28.5 KB
+extend 1 m, no slip\PressureRatio_vs_Length.png | Image / Figure | 433.4 KB
+extend 1 m, no slip\profiles.py | Python Script | 4.0 KB
+extend 1 m, no slip\RAM.cfg | SU2 Configuration | 1.7 KB
+extend 1 m, no slip\residual.png | Image / Figure | 87.6 KB
+extend 1 m, no slip\restart_flow.dat | CFD Result / Data | 468.1 KB
+extend 1 m, no slip\surface.csv | CFD Result / Data | 37.5 KB
+extend 1 m, no slip\TemperatureRatio_vs_Length.png | Image / Figure | 371.8 KB
+extend 1 m, no slip\topwall_surface.csv | CFD Result / Data | 37.5 KB
+extend 1 m, no slip\topwall_values.csv | CFD Result / Data | 60.0 KB
+extend 1 m, no slip\untitled | No Extension | 72.9 KB
+extend 1 m, no slip\Untitled-1.ipynb | IPYNB File | 4.2 KB
+extend 1 m, no slip\untitled.geo | Gmsh Geometry Script | 2.2 KB
+extend 1 m, no slip\velocity.ipynb | IPYNB File | 44.9 KB
+extend 1 m, no slip\velocity.png | Image / Figure | 30.8 KB
+extend 1 m, no slip\Velocity_vs_Length.png | Image / Figure | 366.7 KB
+
+[extend 1 m, slip]
+
+extend 1 m, slip\1-profile.png | Image / Figure | 39.3 KB
+extend 1 m, slip\1-profile_pressure.png | Image / Figure | 34.5 KB
+extend 1 m, slip\1-profile_velocity.png | Image / Figure | 33.5 KB
+extend 1 m, slip\botwall_surface.csv | CFD Result / Data | 37.2 KB
+extend 1 m, slip\botwall_values.csv | CFD Result / Data | 55.9 KB
+extend 1 m, slip\convergence.dat | CFD Result / Data | 747.2 KB
+extend 1 m, slip\Density_vs_Length.png | Image / Figure | 377.7 KB
+extend 1 m, slip\flow.csv | CFD Result / Data | 1.3 MB
+extend 1 m, slip\flow.vtu | CFD Result / Data | 852.7 KB
+extend 1 m, slip\history.csv | CFD Result / Data | 5.0 MB
+extend 1 m, slip\import pandas as pd.py | Python Script | 2.6 KB
+extend 1 m, slip\mach_topwall.png | Image / Figure | 356.4 KB
+extend 1 m, slip\Mach_vs_Length.png | Image / Figure | 389.3 KB
+extend 1 m, slip\mesh.su2 | CFD Result / Data | 629.1 KB
+extend 1 m, slip\NEWMESH.cgns | CGNS File | 388.0 KB
+extend 1 m, slip\plot.py | Python Script | 5.9 KB
+extend 1 m, slip\PressureRatio_vs_Length.png | Image / Figure | 332.1 KB
+extend 1 m, slip\RAM.cfg | SU2 Configuration | 1.7 KB
+extend 1 m, slip\restart.dat | CFD Result / Data | 461.6 KB
+extend 1 m, slip\restart_flow.dat | CFD Result / Data | 468.1 KB
+extend 1 m, slip\soln_surface.vtu | CFD Result / Data | 28.1 KB
+extend 1 m, slip\soln_volume.vtu | CFD Result / Data | 842.0 KB
+extend 1 m, slip\surface.csv | CFD Result / Data | 37.6 KB
+extend 1 m, slip\TemperatureRatio_vs_Length.png | Image / Figure | 388.9 KB
+extend 1 m, slip\topwall_surface.csv | CFD Result / Data | 37.6 KB
+extend 1 m, slip\topwall_values.csv | CFD Result / Data | 62.7 KB
+extend 1 m, slip\untitled | No Extension | 72.9 KB
+extend 1 m, slip\untitled.geo | Gmsh Geometry Script | 2.2 KB
+extend 1 m, slip\velocity.ipynb | IPYNB File | 52.2 KB
+extend 1 m, slip\Velocity_vs_Length.png | Image / Figure | 393.9 KB
+extend 1 m, slip\vol_solution.vtu | CFD Result / Data | 842.0 KB
+
+[extend 1.5 m]
+
+extend 1.5 m\history.csv | CFD Result / Data | 747.2 KB
+extend 1.5 m\mesh.su2 | CFD Result / Data | 1.7 MB
+extend 1.5 m\RAM.cfg | SU2 Configuration | 1.8 KB
+extend 1.5 m\restart.dat | CFD Result / Data | 1.5 MB
+extend 1.5 m\surface.csv | CFD Result / Data | 58.5 KB
+extend 1.5 m\untitled.geo | Gmsh Geometry Script | 2.6 KB
+extend 1.5 m\vol_solution.vtu | CFD Result / Data | 2.7 MB
+
+[extend-1-m-no-slip-0.4]
+
+extend-1-m-no-slip-0.4\botwall_surface.csv | CFD Result / Data | 37.2 KB
+extend-1-m-no-slip-0.4\botwall_values.csv | CFD Result / Data | 58.0 KB
+extend-1-m-no-slip-0.4\flow.csv | CFD Result / Data | 1.3 MB
+extend-1-m-no-slip-0.4\flow.vtu | CFD Result / Data | 852.7 KB
+extend-1-m-no-slip-0.4\history.csv | CFD Result / Data | 4.0 MB
+extend-1-m-no-slip-0.4\import pandas as pd.py | Python Script | 5.9 KB
+extend-1-m-no-slip-0.4\mesh.su2 | CFD Result / Data | 629.1 KB
+extend-1-m-no-slip-0.4\RAM.cfg | SU2 Configuration | 1.7 KB
+extend-1-m-no-slip-0.4\restart_flow.dat | CFD Result / Data | 468.1 KB
+extend-1-m-no-slip-0.4\topwall_surface.csv | CFD Result / Data | 37.5 KB
+extend-1-m-no-slip-0.4\topwall_values.csv | CFD Result / Data | 60.2 KB
+extend-1-m-no-slip-0.4\Untitled-1.ipynb | IPYNB File | 4.2 KB
+
+[extend-1-m-no-slip-0.6]
+
+extend-1-m-no-slip-0.6\botwall_surface.csv | CFD Result / Data | 37.2 KB
+extend-1-m-no-slip-0.6\botwall_values.csv | CFD Result / Data | 57.8 KB
+extend-1-m-no-slip-0.6\flow.csv | CFD Result / Data | 1.3 MB
+extend-1-m-no-slip-0.6\flow.vtu | CFD Result / Data | 852.7 KB
+extend-1-m-no-slip-0.6\history.csv | CFD Result / Data | 2.9 MB
+extend-1-m-no-slip-0.6\import pandas as pd.py | Python Script | 5.9 KB
+extend-1-m-no-slip-0.6\mesh.su2 | CFD Result / Data | 629.1 KB
+extend-1-m-no-slip-0.6\RAM.cfg | SU2 Configuration | 1.7 KB
+extend-1-m-no-slip-0.6\restart_flow.dat | CFD Result / Data | 468.1 KB
+extend-1-m-no-slip-0.6\topwall_surface.csv | CFD Result / Data | 37.5 KB
+extend-1-m-no-slip-0.6\topwall_values.csv | CFD Result / Data | 60.1 KB
+extend-1-m-no-slip-0.6\Untitled-1.ipynb | IPYNB File | 4.2 KB
+
+[extend-1-m-slip-0.4]
+
+extend-1-m-slip-0.4\botwall_surface.csv | CFD Result / Data | 37.2 KB
+extend-1-m-slip-0.4\restart_flow.dat | CFD Result / Data | 468.1 KB
+extend-1-m-slip-0.4\topwall_values.csv | CFD Result / Data | 63.1 KB
+extend-1-m-slip-0.4\Untitled-1.ipynb | IPYNB File | 4.2 KB
+extend-1-m-slip-0.4\velocity.py | Python Script | 3.0 KB
+extend-1-m-slip-0.4\Velocity_Magnitude_profile_x_1.000.png | Image / Figure | 350.9 KB
+
+[extend-1-m-slip-0.6]
+
+extend-1-m-slip-0.6\botwall_surface.csv | CFD Result / Data | 37.2 KB
+extend-1-m-slip-0.6\botwall_values.csv | CFD Result / Data | 55.9 KB
+extend-1-m-slip-0.6\flow.csv | CFD Result / Data | 1.3 MB
+extend-1-m-slip-0.6\flow.vtu | CFD Result / Data | 852.7 KB
+extend-1-m-slip-0.6\history.csv | CFD Result / Data | 4.0 MB
+extend-1-m-slip-0.6\import pandas as pd.py | Python Script | 5.9 KB
+extend-1-m-slip-0.6\mesh.su2 | CFD Result / Data | 629.1 KB
+extend-1-m-slip-0.6\RAM.cfg | SU2 Configuration | 1.7 KB
+extend-1-m-slip-0.6\restart_flow.dat | CFD Result / Data | 468.1 KB
+extend-1-m-slip-0.6\topwall_surface.csv | CFD Result / Data | 37.6 KB
+extend-1-m-slip-0.6\topwall_values.csv | CFD Result / Data | 62.7 KB
+extend-1-m-slip-0.6\Untitled-1.ipynb | IPYNB File | 4.2 KB
+
+[half gemetry]
+
+half gemetry\history.csv | CFD Result / Data | 7.3 MB
+half gemetry\MACH.png | Image / Figure | 41.7 KB
+half gemetry\mesh.su2 | CFD Result / Data | 1.3 MB
+half gemetry\PRE.png | Image / Figure | 39.7 KB
+half gemetry\RAM.cfg | SU2 Configuration | 1.8 KB
+half gemetry\restart.dat | CFD Result / Data | 1.1 MB
+half gemetry\Screenshot 2026-01-30 123741.png | Image / Figure | 561.5 KB
+half gemetry\surface.csv | CFD Result / Data | 43.7 KB
+half gemetry\untitled.geo | Gmsh Geometry Script | 1022 B
+half gemetry\vol_solution.vtu | CFD Result / Data | 2.0 MB
+
+[mult domain]
+
+mult domain\history.csv | CFD Result / Data | 1.2 MB
+mult domain\mesh.su2 | CFD Result / Data | 2.5 MB
+mult domain\RAM.cfg | SU2 Configuration | 1.7 KB
+mult domain\restart.dat | CFD Result / Data | 2.4 MB
+mult domain\surface.csv | CFD Result / Data | 88.9 KB
+mult domain\untitled.geo | Gmsh Geometry Script | 2.0 KB
+mult domain\vol_solution.vtu | CFD Result / Data | 4.3 MB
+
+[openfoam]
+
+openfoam\1.25m.csv | CFD Result / Data | 167.2 KB
+openfoam\1.5m.csv | CFD Result / Data | 166.3 KB
+openfoam\1.75.csv | CFD Result / Data | 167.4 KB
+openfoam\1m.csv | CFD Result / Data | 163.3 KB
+openfoam\2.0411m.csv | CFD Result / Data | 167.2 KB
+openfoam\2m.csv | CFD Result / Data | 163.9 KB
+openfoam\all.pvsm | PVSM File | 1.1 MB
+openfoam\import pandas as pd.py | Python Script | 2.8 KB
+openfoam\Mean_p2000_noz_3d_0.4_0.7s.h5 | H5 File | 923.5 MB
+openfoam\Mean_p2000_noz_3d_0.4_0.7s.xmf | XMF File | 7.0 KB
+openfoam\profiles.py | Python Script | 10.0 KB
+openfoam\results_profiles\DensityRatio_Profiles.png | Image / Figure | 1.1 MB
+openfoam\results_profiles\Mach_Profiles.png | Image / Figure | 1.1 MB
+openfoam\results_profiles\PressureRatio_Profiles.png | Image / Figure | 973.6 KB
+openfoam\results_profiles\StaticPressureRatio_Profiles.png | Image / Figure | 963.3 KB
+openfoam\results_profiles\TemperatureRatio_Profiles.png | Image / Figure | 1.1 MB
+openfoam\results_profiles\TotalPressureRatio_Profiles.png | Image / Figure | 984.3 KB
+openfoam\results_profiles\VelocityProfiles.png | Image / Figure | 1.1 MB
+
+[Presentations]
+
+Presentations\ram.pptx | PPTX File | 31.0 MB
+Presentations\Vedant_Chaudhari_Report.docx | DOCX File | 4.1 MB
+Presentations\Vedant_Chaudhari_Report_new.pdf | PDF File | 3.4 MB
+
+[random]
+
+random\Book1.xlsx | XLSX File | 13.5 KB
+random\Book2.xlsx | XLSX File | 13.2 KB
+random\botwall | No Extension | 1.9 KB
+random\compare.py | Python Script | 6.2 KB
+random\helo | No Extension | 1.8 KB
+random\just the.py | Python Script | 6.9 KB
+random\plot.py | Python Script | 1.7 KB
+random\Theory.txt | Text / Log | 503 B
+random\theroy.py | Python Script | 10.3 KB
+random\threry new compare.py | Python Script | 10.3 KB
+random\topwall | No Extension | 1.9 KB
+random\untitled.iges | CAD / Geometry | 72.9 KB
+
+[results]
+
+results\ChatGPT Image Jan 29, 2026, 09_10_39 PM.png | Image / Figure | 772.6 KB
+results\Density_Comparison.png | Image / Figure | 595.2 KB
+results\DensityRatio_Comparison.png | Image / Figure | 622.6 KB
+results\Mach_Comparison.png | Image / Figure | 508.9 KB
+results\PressureRatio_Comparison.png | Image / Figure | 609.6 KB
+results\TemperatureRatio_Comparison.png | Image / Figure | 613.3 KB
+results\Velocity_Comparison.png | Image / Figure | 579.9 KB
+
+[results-0.4]
+
+results-0.4\DensityRatio_Comparison.png | Image / Figure | 605.3 KB
+results-0.4\Mach_Comparison.png | Image / Figure | 493.1 KB
+results-0.4\PressureRatio_Comparison.png | Image / Figure | 612.8 KB
+results-0.4\TemperatureRatio_Comparison.png | Image / Figure | 622.1 KB
+results-0.4\Velocity_Comparison.png | Image / Figure | 556.8 KB
+
+[results-0.6]
+
+results-0.6\DensityRatio_Comparison.png | Image / Figure | 680.0 KB
+results-0.6\Mach_Comparison.png | Image / Figure | 525.9 KB
+results-0.6\PressureRatio_Comparison.png | Image / Figure | 612.6 KB
+results-0.6\TemperatureRatio_Comparison.png | Image / Figure | 614.9 KB
+results-0.6\Velocity_Comparison.png | Image / Figure | 530.2 KB
+
+[Turb_0.01]
+
+
+[Turb_5]
+
+Turb_5\den.png | Image / Figure | 70.4 KB
+Turb_5\fsf.pvsm | PVSM File | 141.3 KB
+Turb_5\history.csv | CFD Result / Data | 14.6 MB
+Turb_5\inlet.csv | CFD Result / Data | 97.5 KB
+Turb_5\mach and temp.png | Image / Figure | 27.2 KB
+Turb_5\mach.png | Image / Figure | 54.0 KB
+Turb_5\mesh.su2 | CFD Result / Data | 1.3 MB
+Turb_5\outlet.csv | CFD Result / Data | 46.3 KB
+Turb_5\plots.xlsx | XLSX File | 280.5 KB
+Turb_5\pre plot.png | Image / Figure | 37.6 KB
+Turb_5\pre.png | Image / Figure | 40.4 KB
+Turb_5\preratio.png | Image / Figure | 26.3 KB
+Turb_5\residual.png | Image / Figure | 78.0 KB
+Turb_5\restart.dat | CFD Result / Data | 1.1 MB
+Turb_5\surface.csv | CFD Result / Data | 43.7 KB
+Turb_5\t p.png | Image / Figure | 24.0 KB
+Turb_5\t t.png | Image / Figure | 29.4 KB
+Turb_5\temp.png | Image / Figure | 63.9 KB
+Turb_5\tt.csv | CFD Result / Data | 3.9 KB
+Turb_5\untitled.geo | Gmsh Geometry Script | 2.0 KB
+Turb_5\vel.png | Image / Figure | 55.2 KB
+Turb_5\vol_solution.vtu | CFD Result / Data | 2.0 MB
+
+================================================================================
+HANDOVER NOTES FOR NEXT STUDENT
+================================================================================
+
+1. Preserve the existing folder names and file locations.
+2. Do not overwrite original CFD results when creating new simulations.
+3. SU2 configuration files (.cfg) contain the solver, boundary conditions and numerical settings.
+4. OpenFOAM cases should be interpreted using their controlDict, fvSchemes, fvSolution and 0/ field files.
+5. CSV files are generally sampled/post-processed CFD data.
+6. Mesh files should not be renamed unless a new case requires a separate mesh.
+7. For comparison studies, verify geometry, inlet/outlet conditions, turbulence model, wall treatment and sampling location before comparing results.
+8. Folder-name based descriptions are only preliminary; configuration files take priority when determining the actual simulation setup.
+
+================================================================================
+END OF PROJECT GUIDE
+================================================================================
