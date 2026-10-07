@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Xdmf xmlns:xi="http://www.w3.org/2001/XInclude" Version="3.0">
+  <Domain>
+    <Grid CollectionType="None" GridType="Collection" Name="Collection">
+      <Grid Name="internalMesh">
+        <Time Value="0.4"/>
+        <Geometry Origin="" Type="XYZ">
+          <DataItem DataType="Float" Dimensions="4770735 3" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data0</DataItem>
+        </Geometry>
+        <Topology Dimensions="42120000" Type="Mixed">
+          <DataItem DataType="Int" Dimensions="42120000" Format="HDF" Precision="8">Mean_p2000_noz_3d_0.4_0.7s.h5:Data1</DataItem>
+        </Topology>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="Ma_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data2</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="T_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data3</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="U_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735 3" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data4</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="alphat_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data5</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="k_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data6</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="nut_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data7</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="omega_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data8</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="p_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data9</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="rho_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data10</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="yPlus_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data11</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="P0" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="8">Mean_p2000_noz_3d_0.4_0.7s.h5:Data12</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="rho0" Type="None">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="8">Mean_p2000_noz_3d_0.4_0.7s.h5:Data13</DataItem>
+        </Attribute>
+        <Attribute Center="Node" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="T0" Type="Scalar">
+          <DataItem DataType="Float" Dimensions="4770735" Format="HDF" Precision="8">Mean_p2000_noz_3d_0.4_0.7s.h5:Data14</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="Ma_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data15</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="T_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data16</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="U_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000 3" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data17</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="alphat_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data18</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="k_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data19</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="nut_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data20</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="omega_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data21</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="p_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data22</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="rho_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data23</DataItem>
+        </Attribute>
+        <Attribute Center="Cell" ElementCell="" ElementDegree="0" ElementFamily="" ItemType="" Name="yPlus_average" Type="None">
+          <DataItem DataType="Float" Dimensions="4680000" Format="HDF" Precision="4">Mean_p2000_noz_3d_0.4_0.7s.h5:Data24</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>

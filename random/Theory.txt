@@ -1,0 +1,28 @@
+Geometry equation
+        │
+        ▼
+Calculate duct height h(x)
+        │
+        ▼
+Calculate area A(x)
+        │
+        ▼
+Use outlet pressure
+        │
+        ▼
+Calculate outlet Mach (≈0.95)
+        │
+        ▼
+Calculate effective sonic area A*
+        │
+        ▼
+Calculate A(x)/A*
+        │
+        ▼
+Solve area–Mach equation
+        │
+        ▼
+Mach distribution M(x)
+        │
+        ▼
+Calculate P/P0, T/T0, ρ/ρ0 and Velocity
